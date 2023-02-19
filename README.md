@@ -11,3 +11,4 @@
 - Mobile Number: 021914640
 - Email: info@nickskitchen.co.nz
 - Domain: nickskitchen.co.nz
+- Address: 34 Princes Street Auckland Central, Auckland 1010
