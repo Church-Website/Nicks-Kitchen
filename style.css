@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+   
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.catering{
+    font-size: 30px;
+    color: rgb(232, 55, 55);
+}
+ 
+li, .contact-details, .top-section{
+    font-size: 25px;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 95vh;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgb(232, 55, 55);
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.mid-section{
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.catering-service{
+    text-align: justify;
+    margin-right: 950px;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+  
+.social-icons {
+    display: inline-block;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
