@@ -40,7 +40,9 @@ h2{
     text-align: center;
     height: 95vh;
 }
-
+.top-section .btn{
+    margin-top: 50px;
+}
 button{
     font-size: 20px;
     background-color: rgb(232, 55, 55);
@@ -153,6 +155,67 @@ footer {
     }
     .mid-section h2{
         font-size: 20px;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 18px;
+    }
+    .top-section{
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 500px;
+        max-height: 700px;
+    }
+    button{
+        font-size: 15px;
+    }
+    .mid-section{
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .mid-section h1{
+        font-size: 30px;
+    }
+    .mid-section h2{
+        font-size: 18px;
+    }
+    .catering-service{
+        max-width: 400px;
+        min-width: 300px;
+        text-align: left;
+    }
+  }
+  
+  @media only screen and (max-width: 280px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 16px;
+    }
+
+    .top-section .btn{
+        margin-bottom: 50px;
+    }
+    button{
+        font-size: 12px;
+    }
+
+    .mid-section{
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .mid-section h1{
+        font-size: 20px;
+    }
+    .mid-section h2{
+        font-size: 16px;
+    }
+    .catering-service{
+        min-width: 250px;
+        text-align: left;
     }
   }
   
