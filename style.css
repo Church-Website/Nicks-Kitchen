@@ -1,8 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
-   
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+    
+}
+
 *{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,18 +17,24 @@ html {
 
 h1{
     font-size: 50px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
 }
 
 .catering{
-    font-size: 30px;
     color: rgb(232, 55, 55);
 }
  
-li, .contact-details, .top-section{
+/* li, .contact-details{
     font-size: 25px;
-}
+} */
 
 .top-section {
+    /* font-family: 'Open Sans';
+    font-size: 25px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +60,22 @@ button:hover{
 .mid-section{
     margin-left: 200px;
     margin-bottom: 100px;
+    max-width: 1800px;
+}
+
+.our-services ul{
+    margin-left: 40px;
 }
 
 .catering-service{
+    font-weight: 500;
     text-align: justify;
     margin-right: 950px;
 
+}
+
+footer p{
+    font-size: 15px;
 }
 
 footer {
