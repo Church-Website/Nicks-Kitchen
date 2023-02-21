@@ -31,6 +31,8 @@ h2{
 }
 
 .top-section {
+    margin:auto;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,8 +56,11 @@ button:hover{
 }
 
 .mid-section{
-    margin-left: 200px;
-    margin-bottom: 100px;
+    /* margin-left: 200px;
+    margin-bottom: 100px; */
+    margin: auto;
+    padding-left: 100px ;
+    padding-bottom: 100px;
     max-width: 1800px;
 }
 
@@ -101,7 +106,6 @@ footer {
 @media (max-width: 768px) {
     .top-section,.mid-section{
         font-size: 20px;
-        min-width: 00px;
         margin: 0px;
         padding: 0px;
     }
@@ -121,3 +125,34 @@ footer {
     }
 
 }  
+@media only screen and (min-device-width: 428px) and (max-device-width: 926px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 20px;
+    }
+    .top-section{
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 500px;
+    }
+    button{
+        font-size: 15px;
+    }
+    .mid-section{
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .catering-service{
+        max-width: 500px;
+        min-width: 400px;
+        text-align: left;
+    }
+    .mid-section h1{
+        font-size: 30px;
+    }
+    .mid-section h2{
+        font-size: 20px;
+    }
+  }
+  
