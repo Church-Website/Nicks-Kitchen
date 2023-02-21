@@ -77,6 +77,34 @@ button:hover{
 
 }
 
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text-icon{
+    margin-top: 10px;
+    text-indent: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+.location{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    max-width: 500px;
+}
+.location p{
+    padding-left: 20px;
+}
+.contact-details img{
+    height: 40px;
+    width: 40px;
+}
+
 footer p{
     font-size: 15px;
 }
@@ -105,7 +133,7 @@ footer {
     object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .top-section,.mid-section{
         font-size: 20px;
         margin: 0px;
@@ -125,7 +153,33 @@ footer {
         width: 40px;
         height: 40px;
     }
-
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .text-icon{
+        margin-top: 10px;
+        text-indent: 20px;
+        line-height: 30px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+    .location{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        max-width: 425px;
+    }
+    .location p{
+        padding-left: 20px;
+    }
+    .contact-details img{
+        height: 40px;
+        width: 40px;
+    }
 }  
 @media only screen and (min-device-width: 428px) and (max-device-width: 926px) {
     .top-section, .mid-section{
@@ -188,12 +242,22 @@ footer {
         min-width: 300px;
         text-align: left;
     }
+    .contact-details img{
+        height: 30px;
+        width: 30px;
+    }
   }
   
   @media only screen and (max-width: 280px) {
     .top-section, .mid-section{
         margin: auto;
         font-size: 16px;
+    }
+    .top-section .btn{
+        margin-top: 20px;
+    }
+    .top-section{
+        height:120vh;
     }
 
     .top-section .btn{
