@@ -8,11 +8,13 @@ html {
 }
 
 *{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+.top-section, .mid-section{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
 }
 
 h1{
@@ -27,14 +29,8 @@ h2{
 .catering{
     color: rgb(232, 55, 55);
 }
- 
-/* li, .contact-details{
-    font-size: 25px;
-} */
 
 .top-section {
-    /* font-family: 'Open Sans';
-    font-size: 25px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,3 +98,26 @@ footer {
     object-fit: contain;
 }
 
+@media (max-width: 768px) {
+    .top-section,.mid-section{
+        font-size: 20px;
+        min-width: 00px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .mid-section{
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .catering-service{
+        min-width: 500px;
+        max-width: 1500px;
+    }
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+}  
