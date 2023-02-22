@@ -6,18 +6,46 @@ html {
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
     
 }
+body{
+    background-image: url("./utils/Background/BRICK-WALL.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+.top-photo{
+    text-align: center;
+}
+.top-photo img{
+    max-width: 100%;
+    height: 450px;
+    margin-top: 80px;
+}
 .top-section, .mid-section{
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
 }
+.top-section img{
+    height: 330px;
+}
 
-h1{
+.top-section {
+    margin:auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 125vh;
+    padding-top: 10px;
+}
+
+.mid-section h1{
     font-size: 50px;
     font-weight: 700;
 }
@@ -30,16 +58,7 @@ h1{
     color: rgb(232, 55, 55);
 }
 
-.top-section {
-    margin:auto;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 95vh;
-}
+
 
 .btn{
     margin-top: 50px;
@@ -61,8 +80,6 @@ button:hover{
 }
 
 .mid-section{
-    /* margin-left: 200px;
-    margin-bottom: 100px; */
     margin: auto;
     padding-left: 100px ;
     padding-bottom: 100px;
@@ -91,7 +108,6 @@ button:hover{
     line-height: 30px;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
 }
 
 .location{
@@ -139,10 +155,23 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 210px;
+        margin-top: 80px;
+    }
     .top-section,.mid-section{
         font-size: 20px;
-        margin: 0px;
-        padding: 0px;
+        margin: auto;
+    }
+    .top-section img{
+        height: 170px;
+    }
+    .top-section{
+        padding-bottom: 100px;
     }
     .mid-section{
         margin-left: 30px;
@@ -186,37 +215,21 @@ footer {
     }
 }  
 
-@media only screen and (min-device-width: 428px) and (max-device-width: 926px) {
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 20px;
+@media only screen and (max-width: 480px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 130px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 120px;
     }
     .top-section{
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        max-width: 500px;
+        padding-bottom: 10px;
     }
-    button{
-        font-size: 15px;
-    }
-    .mid-section{
-        padding-left: 20px;
-        padding-bottom: 40px;
-    }
-    .catering-service{
-        max-width: 500px;
-        min-width: 400px;
-    }
-    .mid-section h1{
-        font-size: 30px;
-    }
-    .mid-section h2{
-        font-size: 20px;
-    }
-  }
-
-@media only screen and (max-width: 480px) {
     .top-section, .mid-section{
         margin: auto;
         font-size: 18px;
@@ -232,7 +245,7 @@ footer {
         font-size: 15px;
     }
     .mid-section{
-        padding-left: 20px;
+        padding-left: 40px;
         padding-bottom: 40px;
     }
     .mid-section h1{
@@ -252,6 +265,20 @@ footer {
   }
   
   @media only screen and (max-width: 280px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 95px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 90px;
+    }
+    .top-section{
+        padding-bottom: 10px;
+    }
     .top-section, .mid-section{
         margin: auto;
         font-size: 15px;
@@ -293,16 +320,28 @@ footer {
   }
 
   @media screen and (min-width: 1366px) and (max-height: 768px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 400px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 350px;
+    }
+
     .top-section, .mid-section{
         margin: auto;
         font-size: 25px;
     }
     .top-section{
-        height: 90vh;
+        height: 120vh;
     }
 
     button{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .mid-section{
@@ -333,21 +372,32 @@ footer {
   }
 
   @media screen and (min-width: 1440px) and (max-width: 1477px) and (min-height: 831px) and (max-height: 1024px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 400px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 350px;
+    }
     .top-section, .mid-section{
         margin: auto;
         font-size: 26px;
     }
     .top-section{
-        height: 90vh;
+        height: 120vh;
     }
 
     button{
-        font-size: 16px;
+        font-size: 21px;
     }
 
     .mid-section{
-        padding-left: 70px;
-        padding-bottom: 60px;
+        padding-left: 90px;
+        padding-bottom: 80px;
     }
     .mid-section h1{
         font-size: 46px;
@@ -372,21 +422,33 @@ footer {
     }
   }
   @media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 768px) and (max-height: 1024px){
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 350px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 300px;
+    }
+
     .top-section, .mid-section{
         margin: auto;
         font-size: 25px;
     }
     .top-section{
-        height: 70vh;
+        height: 110vh;
     }
 
     button{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .mid-section{
-        padding-left: 70px;
-        padding-bottom: 60px;
+        padding-left: 90px;
+        padding-bottom: 80px;
     }
     .mid-section h1{
         font-size: 45px;
@@ -411,21 +473,33 @@ footer {
     }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1176px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 300px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 250px;
+    }
+    
     .top-section, .mid-section{
         margin: auto;
         font-size: 23px;
     }
     .top-section{
-        height: 90vh;
+        height: 65vh;
     }
 
     button{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .mid-section{
-        padding-left: 70px;
-        padding-bottom: 60px;
+        padding-left: 80px;
+        padding-bottom: 70px;
     }
     .mid-section h1{
         font-size: 43px;
@@ -450,6 +524,17 @@ footer {
     }
   }
   @media screen and (max-width: 800px) and (max-height: 600px) {
+    .top-photo{
+        text-align: center;
+    }
+    .top-photo img{
+        max-width: 100%;
+        height: 250px;
+        margin-top: 80px;
+    }
+    .top-section img{
+        height: 200px;
+    }
     .top-section, .mid-section{
         margin: auto;
         font-size: 17px;
@@ -457,7 +542,7 @@ footer {
     .top-section{
         min-width: 500px;
         max-width: 580px;
-        height: 90vh;
+        height: 110vh;
     }
 
     button{
@@ -481,6 +566,9 @@ footer {
     .contact-details img{
         height: 27px;
         width: 27px;
+    }
+    .location p{
+        max-width: 280px;
     }
     footer p{
         font-size: 12px;
