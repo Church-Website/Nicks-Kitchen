@@ -22,7 +22,7 @@ h1{
     font-weight: 700;
 }
 
-h2{
+.mid-section h2{
     font-size: 30px;
 }
 
@@ -40,9 +40,11 @@ h2{
     text-align: center;
     height: 95vh;
 }
-.top-section .btn{
+
+.btn{
     margin-top: 50px;
 }
+
 button{
     font-size: 20px;
     background-color: rgb(232, 55, 55);
@@ -52,6 +54,7 @@ button{
     padding: 15px 30px;
     border: none;
 }
+
 button:hover{
     cursor: pointer;
     background-color: red;
@@ -72,7 +75,7 @@ button:hover{
 
 .catering-service{
     font-weight: 500;
-    text-align: justify;
+    text-align: left;
     margin-right: 950px;
 
 }
@@ -90,16 +93,18 @@ button:hover{
     flex-direction: row;
     /* justify-content: center; */
 }
+
 .location{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    text-align: left;
     max-width: 500px;
 }
+
 .location p{
     padding-left: 20px;
 }
+
 .contact-details img{
     height: 40px;
     width: 40px;
@@ -170,7 +175,6 @@ footer {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        text-align: left;
         max-width: 425px;
     }
     .location p{
@@ -181,6 +185,7 @@ footer {
         width: 40px;
     }
 }  
+
 @media only screen and (min-device-width: 428px) and (max-device-width: 926px) {
     .top-section, .mid-section{
         margin: auto;
@@ -202,7 +207,6 @@ footer {
     .catering-service{
         max-width: 500px;
         min-width: 400px;
-        text-align: left;
     }
     .mid-section h1{
         font-size: 30px;
@@ -240,7 +244,6 @@ footer {
     .catering-service{
         max-width: 400px;
         min-width: 300px;
-        text-align: left;
     }
     .contact-details img{
         height: 30px;
@@ -251,20 +254,16 @@ footer {
   @media only screen and (max-width: 280px) {
     .top-section, .mid-section{
         margin: auto;
-        font-size: 16px;
-    }
-    .top-section .btn{
-        margin-top: 20px;
-    }
-    .top-section{
-        height:120vh;
+        font-size: 15px;
     }
 
-    .top-section .btn{
-        margin-bottom: 50px;
+    .top-section{
+        height: 120vh;
     }
+
+
     button{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .mid-section{
@@ -275,11 +274,221 @@ footer {
         font-size: 20px;
     }
     .mid-section h2{
-        font-size: 16px;
+        font-size: 15px;
     }
     .catering-service{
         min-width: 250px;
-        text-align: left;
+    }
+    .contact-details img{
+        height: 30px;
+        width: 30px;
+    }
+    footer p{
+        font-size: 11px;
+    }
+    footer img{
+        height: 20px ;
+        width: 20px;
     }
   }
+
+  @media screen and (min-width: 1366px) and (max-height: 768px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 25px;
+    }
+    .top-section{
+        height: 90vh;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    .mid-section{
+        padding-left: 80px;
+        padding-bottom: 60px;
+    }
+    .mid-section h1{
+        font-size: 45px;
+    }
+    .mid-section h2{
+        font-size: 25px;
+    }
+    .catering-service{
+        min-width: 680px;
+        max-width: 900px;
+    }
+    .contact-details img{
+        height: 33px;
+        width: 33px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    footer img{
+        height: 20px;
+        width: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) and (max-width: 1477px) and (min-height: 831px) and (max-height: 1024px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 26px;
+    }
+    .top-section{
+        height: 90vh;
+    }
+
+    button{
+        font-size: 16px;
+    }
+
+    .mid-section{
+        padding-left: 70px;
+        padding-bottom: 60px;
+    }
+    .mid-section h1{
+        font-size: 46px;
+    }
+    .mid-section h2{
+        font-size: 26px;
+    }
+    .catering-service{
+        min-width: 710px;
+        max-width: 850px;
+    }
+    .contact-details img{
+        height: 35px;
+        width: 35px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    footer img{
+        height: 20px;
+        width: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 768px) and (max-height: 1024px){
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 25px;
+    }
+    .top-section{
+        height: 70vh;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    .mid-section{
+        padding-left: 70px;
+        padding-bottom: 60px;
+    }
+    .mid-section h1{
+        font-size: 45px;
+    }
+    .mid-section h2{
+        font-size: 26px;
+    }
+    .catering-service{
+        min-width: 650px;
+        max-width: 800px;
+    }
+    .contact-details img{
+        height: 35px;
+        width: 35px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    footer img{
+        height: 20px;
+        width: 20px;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1176px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 23px;
+    }
+    .top-section{
+        height: 90vh;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    .mid-section{
+        padding-left: 70px;
+        padding-bottom: 60px;
+    }
+    .mid-section h1{
+        font-size: 43px;
+    }
+    .mid-section h2{
+        font-size: 23px;
+    }
+    .catering-service{
+        min-width: 550px;
+        max-width: 600px;
+    }
+    .contact-details img{
+        height: 28px;
+        width: 28px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer img{
+        height: 18px;
+        width: 18px;
+    }
+  }
+  @media screen and (max-width: 800px) and (max-height: 600px) {
+    .top-section, .mid-section{
+        margin: auto;
+        font-size: 17px;
+    }
+    .top-section{
+        min-width: 500px;
+        max-width: 580px;
+        height: 90vh;
+    }
+
+    button{
+        font-size: 12px;
+    }
+
+    .mid-section{
+        padding-left: 70px;
+        padding-bottom: 60px;
+    }
+    .mid-section h1{
+        font-size: 37px;
+    }
+    .mid-section h2{
+        font-size: 17px;
+    }
+    .catering-service{
+        min-width: 460px;
+        max-width: 500px;
+    }
+    .contact-details img{
+        height: 27px;
+        width: 27px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer img{
+        height: 17px;
+        width: 17px;
+    }
+  }
+  
   
