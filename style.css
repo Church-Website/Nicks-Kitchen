@@ -7,63 +7,69 @@ html {
     font-display: swap;
     
 }
-body{
-    background-image: url("./utils/Background/BRICK-WALL-min.webp");
-    background-repeat: repeat-y;
-    background-size: contain;
-}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-image: url("./utils/Background/BRICK-WALL-min.webp");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
 .top-photo{
+    background-image: url("./utils/Background/BRICK-WALL-min.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
-.top-photo img{
-    max-width: 100%;
-    height: 350px;
-    margin-top: 60px;
+.top-photo img {
+    height: 500px;
 }
+  
 .top-section, .mid-section{
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 .top-section img{
-    height: 250px;
+    height: 200px;
 }
 
 .top-section {
+    background-image: url('utils/Background/BRICK-WALL-min.webp');
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+
+.introduction{
+    background-image: url('./utils/Background/mids.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin:auto;
-    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 110vh;
+    height: 100%;
+    width: 100%;
 }
-
-.mid-section h1{
-    font-size: 45px;
-    font-weight: 700;
+.introduction a{
+    margin-top: 30px;
 }
-
-.mid-section h2{
-    font-size: 25px;
-}
-
-.catering{
-    color: rgb(232, 55, 55);
-}
-
-.btn{
-    margin-top: 50px;
+.introduction p{
+    max-width: 600px;
+    margin-bottom: 10px;
 }
 
 button{
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgb(232, 55, 55);
     color: white;
     font-weight: 600;
@@ -71,17 +77,28 @@ button{
     padding: 15px 30px;
     border: none;
 }
-
 button:hover{
     cursor: pointer;
     background-color: red;
 }
 
+.mid-section h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.mid-section h2{
+    font-size: 20px;
+}
+
+.catering{
+    color: rgb(232, 55, 55);
+}
+
 .mid-section{
     margin: auto;
     padding-left: 100px ;
-    padding-bottom: 100px;
-    max-width: 1800px;
+    padding-bottom: 10px;
 }
 
 .our-services ul{
@@ -89,8 +106,8 @@ button:hover{
 }
 
 .catering-service{
-    max-width: 660px;
-    min-width: 600;
+    max-width: 600px;
+    min-width: 600px;
     font-weight: 500;
     text-align: left;
 }
@@ -108,31 +125,51 @@ button:hover{
     color: red;
 }
 .text-icon{
-    margin-top: 10px;
-    text-indent: 20px;
-    line-height: 30px;
+    margin-bottom: 5px;
+    text-indent: 15px;
     display: flex;
     flex-direction: row;
 }
 
 .location{
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .location p{
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .contact-details img{
-    height: 35px;
-    width: 35px;
+    height: 26px;
+    width: 26px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.mid-section {
+    flex: 1 1 50%;
+}
+
+.photo-container {
+    flex: 1 1 50%;
+    position: relative;
+}
+
+.photo-container img{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
 }
 
 footer p{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 footer {
@@ -149,8 +186,8 @@ footer {
 .social-icons a {
     display: inline-block;
     margin: 0 5px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .social-icons img {
@@ -158,6 +195,8 @@ footer {
     height: 100%;
     object-fit: contain;
 }
+
+
 
 @media only screen and (max-width: 768px) and (min-height: 658px) {
     .top-photo{
