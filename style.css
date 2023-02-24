@@ -192,61 +192,198 @@ footer {
     height: 100%;
     object-fit: contain;
 }
-/* XX Small */
-@media (min-width: 322px) and (max-width: 448.98px){
 
-}
-
-/* Extra small devices (phones) */
-@media (min-width: 449px) and (max-width: 575.98px) { 
+  @media only screen and (min-device-width: 390px) and (max-device-width: 926px) and (-webkit-device-pixel-ratio: 3){
     .top-photo img{
-        height: 231.5px;
+        height: 200px;
     }
     .top-section, .mid-section{
-        font-size: 18px;
+        font-size: 15px;
         margin: auto;
     }
     .top-section{
-        height: 750px;
+        height: 80vh;
     }
     .introduction{
         background-size: contain;
     }
     .introduction img{
-        height: 135px;
+        height: 100px;
     }
     .introduction p{
-        max-width: 400px;
-        min-width: 300px;
+        max-width: 250px;
+        min-width: 200px;
     }
+    /* .btn{
+        font-size: 40px;
+    } */
     button{
-        font-size: 13px;
+        font-size: 10px;
+        border-radius: 34px;
+        padding: 10px 20px;
     }
     .mid-section{
-        padding-left: 20px;
-        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-bottom: 30px;
 
     }
     .mid-section h1{
-        font-size: 30px;
+        font-size: 25px;
     }
-    .mid-section h1{
-        font-size:28px;
-    }
+
     .mid-section h2{
-        font-size: 18px;
+        font-size: 15px;
     }
     .catering-service{
-        max-width: 500px;
-        min-width: 420px;
+        max-width: 300px;
+        min-width: 280px;
     }
     .contact-details img{
-        height: 23px;
-        width: 23px;
+        height: 10px;
+        width: 10px;
     }
     .location p{
-        min-width: 250px;
+        min-width: 100px;
+        max-width: 150px;
+    }
+    .photo-container{
+        padding: 0;
+        margin: 0;
+    }
+    .photo-container img{
+        height: 250px;
+    }
+    .contact-details img{
+        height: 25px;
+        width: 25px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    } 
+  }
+  @media only screen and (min-device-width: 428px) and (max-device-width: 926px){
+    .top-photo img{
+        height: 10px;
+    }
+    .top-section, .mid-section{
+        font-size: 30px;
+        margin: auto;
+    }
+    .top-section{
+        height: 80vh;
+    }
+    .introduction{
+        background-size: contain;
+    }
+    .introduction img{
+        height: 100px;
+    }
+    .introduction p{
         max-width: 250px;
+        min-width: 200px;
+    }
+    button{
+        font-size: 10px;
+        border-radius: 34px;
+        padding: 10px 20px;
+    }
+    .mid-section{
+        padding-left: 10px;
+        padding-bottom: 30px;
+
+    }
+    .mid-section h1{
+        font-size: 25px;
+    }
+
+    .mid-section h2{
+        font-size: 15px;
+    }
+    .catering-service{
+        max-width: 300px;
+        min-width: 280px;
+    }
+    .contact-details img{
+        height: 10px;
+        width: 10px;
+    }
+    .location p{
+        min-width: 100px;
+        max-width: 150px;
+    }
+    .photo-container{
+        padding: 0;
+        margin: 0;
+    }
+    .photo-container img{
+        height: 250px;
+    }
+    .contact-details img{
+        height: 25px;
+        width: 25px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }  
+  }
+  @media only screen and (max-width: 428px) {
+    .top-photo img{
+        height: 200px;
+    }
+    .top-section, .mid-section{
+        font-size: 16px;
+        margin: auto;
+    }
+    .top-section{
+        height: 85vh;
+    }
+    .introduction{
+        background-size: contain;
+    }
+    .introduction img{
+        height: 120px;
+    }
+    .introduction p{
+        margin-bottom: 40px;
+        max-width: 300px;
+        min-width: 220px;
+    }
+    button{
+        font-size: 11px;
+        border-radius: 34px;
+        padding: 11px 22px;
+    }
+    .mid-section{
+        padding-left: 30px;
+        padding-bottom: 30px;
+
+    }
+    .mid-section h1{
+        font-size: 26px;
+    }
+
+    .mid-section h2{
+        font-size: 16px;
+    }
+    .catering-service{
+        max-width: 400px;
+        min-width: 350px;
+    }
+    .contact-details img{
+        height: 5px;
+        width: 5px;
+    }
+    .location p{
+        min-width: 150px;
+        max-width: 200px;
     }
     .photo-container{
         padding: 0;
@@ -255,95 +392,15 @@ footer {
     .photo-container img{
         height: 230px;
     }
-
-  }
-  
-  /* Small devices (tablets) */
-  @media (min-width: 576px) and (max-width: 767.98px) { 
-    /* Styles here */
-  }
-  
-  /* Medium devices (laptops, desktops) */
-  @media (min-width: 768px) and (max-width: 991.98px) { 
-    /* Styles here */
-  }
-  
-  /* Large devices (large laptops, desktops) */
-  @media (min-width: 992px) and (max-width: 1199.98px) { 
-    /* Styles here */
-  }
-  
-  /* Extra large devices (TVs, projectors) */
-  @media (min-width: 1200px)  and (min-height: 2778px){ 
-    .top-photo img{
-        height: 600px;
-    }
-    .top-section, .mid-section{
-        font-size: 55px;
-        margin: auto;
-    }
-    .top-section{
-        height: 95vh;
-    }
-    .introduction{
-        background-size: contain;
-    }
-    .introduction img{
-        height: 400px;
-    }
-    .introduction p{
-        max-width: 900px;
-        min-width: 800px;
-    }
-    button{
-        font-size: 50px;
-        border-radius: 167px;
-        padding: 50px 65px;
-    }
-    .mid-section{
-        padding-left: 100px;
-        padding-bottom: 30px;
-
-    }
-    .mid-section h1{
-        font-size: 75px;
-    }
-
-    .mid-section h2{
-        font-size: 55px;
-    }
-    .catering-service{
-        max-width: 1200px;
-        min-width: 1100px;
-    }
     .contact-details img{
-        height: 23px;
-        width: 23px;
-    }
-    .location p{
-        min-width: 700px;
-        max-width: 800px;
-    }
-    .photo-container{
-        padding: 0;
-        margin: 0;
-    }
-    .photo-container img{
-        height: 500px;
-    }
-    .contact-details img{
-        height: 70px;
-        width: 70px;
-    }
-    footer {
-        padding: 70px;
+        height: 25px;
+        width: 25px;
     }
     footer p{
-        font-size: 30px;
+        font-size: 10px;
     }
     .social-icons a {
-        width: 100px;
-        height: 100px;
-    }
+        width: 35px;
+        height: 35px;
+    }  
   }
-  
