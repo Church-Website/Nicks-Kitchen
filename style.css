@@ -40,10 +40,7 @@ body{
 }
 
 .top-section {
-    background-image: url('utils/Background/BRICK-WALL-min.webp');
-    background-size: cover;
-    background-position: center;
-    height: 110vh;
+    height: 120vh;
 }
 
 .introduction{
@@ -51,7 +48,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,613 +192,89 @@ footer {
     height: 100%;
     object-fit: contain;
 }
+/* XX Small */
+@media (min-width: 322px) and (max-width: 448.98px){
 
+}
 
-
-@media only screen and (max-width: 768px) and (min-height: 658px) {
-    .top-photo{
-        text-align: center;
-    }
+/* Extra small devices (phones) */
+@media (min-width: 449px) and (max-width: 575.98px) { 
     .top-photo img{
-        max-width: 100%;
-        height: 105px;
-        margin-top: 30px;
-    }
-    .top-section img{
-        height: 55px;
+        height: 231.5px;
     }
     .top-section, .mid-section{
+        font-size: 18px;
         margin: auto;
-        font-size: 17px;
     }
     .top-section{
-        min-width: 250px;
-        max-width: 290px;
-        height: 110vh;
+        height: 750px;
     }
-
-    button{
-        font-size: 12px;
+    .introduction{
+        background-size: contain;
     }
-
-    .mid-section{
-        padding-left:30px;
-        padding-bottom: 20px;
-    }
-    .mid-section h1{
-        font-size: 27px;
-    }
-    .mid-section h2{
-        font-size: 17px;
-    }
-    .catering-service{
-        min-width: 250px;
-        max-width: 290px;
-    }
-    .contact-details img{
-        height: 30px;
-        width: 30px;
-    }
-    .location p{
-        max-width: 290px;
-    }
-
-    .social-icons img{
-        height: 40px;
-        width: 40px;
-    }
-}  
-
-@media only screen 
-and (max-width: 576px)
-and (max-height: 1024px)
-and (-webkit-device-pixel-ratio: 1.5)
-{
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
+    .introduction img{
         height: 135px;
-        margin-top: 85px;
     }
-    .top-section img{
-        height: 100px;
-    }
-
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 18px;
-    }
-    .top-section{
-        margin: 0 auto;
-        padding: 0px 20px 50px 20px;
-        max-width: 500px;
-        height: 75vh;
-    }
-    button{
-        font-size: 15px;
-    }
-    .mid-section{
-        padding-left: 40px;
-        padding-bottom: 40px;
-    }
-    .mid-section h1{
-        font-size: 28px;
-    }
-    .mid-section h2{
-        font-size: 18px;
-    }
-    .catering-service{
-        max-width: 350px;
+    .introduction p{
+        max-width: 400px;
         min-width: 300px;
     }
-    .contact-details img{
-        height: 30px;
-        width: 30px;
-    }
-  }
-  
-  @media only screen and (max-width: 280px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 90px;
-        margin-top: 50px;
-    }
-    .top-section img{
-        height: 70px;
-    }
-
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 15px;
-    }
-
-    .top-section{
-        height: 100vh;
-        min-width: 200px;
-        max-width: 250px;
-    }
-
     button{
-        font-size: 10px;
+        font-size: 13px;
     }
-
     .mid-section{
         padding-left: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
+
     }
     .mid-section h1{
-        font-size: 20px;
-    }
-    .mid-section h2{
-        font-size: 15px;
-    }
-    .catering-service{
-        min-width: 200px;
-        max-width: 250px;
-    }
-    .contact-details img{
-        height: 25px;
-        width: 25px;
-    }
-    footer p{
-        font-size: 11px;
-    }
-    .social-icons img{
-        height: 40px ;
-        width: 40px;
-    }
-  }
-  @media screen and (min-width: 1366px) and (max-height: 768px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 400px;
-        margin-top: 80px;
-    }
-    .top-section img{
-        height: 350px;
-    }
-
-    .top-section, .mid-section{
-        margin: auto;
         font-size: 30px;
     }
-    .top-section{
-        height: 150vh;
-    }
-
-    button{
-        font-size: 25px;
-    }
-
-    .mid-section{
-        padding-left: 90px;
-        padding-bottom: 80px;
-    }
     .mid-section h1{
-        font-size: 50px;
+        font-size:28px;
     }
     .mid-section h2{
-        font-size: 30px;
-    }
-    .catering-service{
-        min-width: 680px;
-        max-width: 900px;
-    }
-    .contact-details img{
-        height: 33px;
-        width: 33px;
-    }
-    footer p{
-        font-size: 15px;
-    }
-    footer img{
-        height: 35px;
-        width: 35px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) and (max-width: 1477px) and (min-height: 831px) and (max-height: 1024px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 400px;
-        margin-top: 80px;
-    }
-    .top-section img{
-        height: 350px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 26px;
-    }
-    .top-section{
-        height: 120vh;
-    }
-
-    button{
-        font-size: 21px;
-    }
-
-    .mid-section{
-        padding-left: 90px;
-        padding-bottom: 80px;
-    }
-    .mid-section h1{
-        font-size: 46px;
-    }
-    .mid-section h2{
-        font-size: 26px;
-    }
-    .catering-service{
-        min-width: 650px;
-        max-width: 700px;
-    }
-    .contact-details img{
-        height: 35px;
-        width: 35px;
-    }
-  }
-
-  @media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 768px) and (max-height: 1024px){
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 350px;
-        margin-top: 80px;
-    }
-    .top-section img{
-        height: 300px;
-    }
-
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 25px;
-    }
-    .top-section{
-        height: 110vh;
-    }
-
-    button{
-        font-size: 20px;
-    }
-
-    .mid-section{
-        padding-left: 90px;
-        padding-bottom: 80px;
-    }
-    .mid-section h1{
-        font-size: 45px;
-    }
-    .mid-section h2{
-        font-size: 26px;
-    }
-    .catering-service{
-        min-width: 650px;
-        max-width: 680px;
-    }
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 1176px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 300px;
-        margin-top: 80px;
-    }
-    .top-section img{
-        height: 250px;
-    }
-    
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 23px;
-    }
-    .top-section{
-        height: 65vh;
-    }
-
-    button{
         font-size: 18px;
     }
-
-    .mid-section{
-        padding-left: 80px;
-        padding-bottom: 70px;
-    }
-    .mid-section h1{
-        font-size: 43px;
-    }
-    .mid-section h2{
-        font-size: 23px;
-    }
     .catering-service{
-        min-width: 550px;
-        max-width: 600px;
-    }
-  }
-  @media screen and (min-width: 800px) and (max-width: 800px) and (min-height: 600px) and (max-height: 600px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 250px;
-        margin-top: 80px;
-    }
-    .top-section img{
-        height: 200px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 17px;
-    }
-    .top-section{
-        min-width: 500px;
-        max-width: 580px;
-        height: 110vh;
-    }
-
-    button{
-        font-size: 12px;
-    }
-
-    .mid-section{
-        padding-left: 70px;
-        padding-bottom: 60px;
-    }
-    .mid-section h1{
-        font-size: 37px;
-    }
-    .mid-section h2{
-        font-size: 17px;
-    }
-    .catering-service{
-        min-width: 460px;
         max-width: 500px;
+        min-width: 420px;
     }
     .contact-details img{
-        height: 27px;
-        width: 27px;
+        height: 23px;
+        width: 23px;
     }
     .location p{
-        max-width: 280px;
+        min-width: 250px;
+        max-width: 250px;
     }
-    .social-icons a{
-        margin: auto;
+    .photo-container{
+        padding: 0;
+        margin: 0;
     }
-    .social-icons img{
-        height: 40px;
-        width: 40px;
+    .photo-container img{
+        height: 230px;
     }
+
   }
   
-  @media only screen  and (max-width: 375px) and (min-height: 667px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 120px;
-        margin-top: 50px;
-    }
-    .top-section img{
-        height: 70px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 17px;
-    }
-    .top-section{
-        min-width: 200px;
-        max-width: 350px;
-        height: 100vh;
-    }
-
-    button{
-        font-size: 12px;
-    }
-
-    .mid-section{
-        padding-left: 30px;
-        padding-bottom: 20px;
-    }
-    .mid-section h1{
-        font-size: 27px;
-    }
-    .mid-section h2{
-        font-size: 17px;
-    }
-    .catering-service{
-        min-width: 200px;
-        max-width: 350px;
-    }
-    .contact-details img{
-        height: 27px;
-        width: 27px;
-    }
-    .location p{
-        max-width: 270px;
-    }
-    .social-icons a{
-        margin: auto;
-    }
-    .social-icons img{
-        height: 40px;
-        width: 40px;
-    }
+  /* Small devices (tablets) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    /* Styles here */
   }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 240px;
-        margin-top: 50px;
-    }
-    .top-section img{
-        height: 190px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 25px;
-    }
-    .top-section{
-        min-width: 650px;
-        max-width: 700px;
-        height: 80vh;
-    }
-
-    button{
-        font-size: 20px;
-    }
-
-    .mid-section{
-        padding-left:50px;
-        padding-bottom: 40px;
-    }
-    .mid-section h1{
-        font-size: 45px;
-    }
-    .mid-section h2{
-        font-size: 25px;
-    }
-    .catering-service{
-        min-width: 500px;
-        max-width: 550px;
-    }
-    .contact-details img{
-        height: 30px;
-        width: 30px;
-    }
-    .location p{
-        max-width: 500px;
-    }
-
-    .social-icons img{
-        height: 60px;
-        width: 60px;
-    }
+  
+  /* Medium devices (laptops, desktops) */
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    /* Styles here */
   }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3),
-  only screen and (min-device-width: 414px) and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
-
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 130px;
-        margin-top: 50px;
-    }
-    .top-section img{
-        height: 80px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 20px;
-    }
-    .top-section{
-        min-width: 300px;
-        max-width: 380px;
-        height: 120vh;
-    }
-
-    button{
-        font-size: 15px;
-    }
-
-    .mid-section{
-        padding-left:30px;
-        padding-bottom: 20px;
-    }
-    .mid-section h1{
-        font-size: 30px;
-    }
-    .mid-section h2{
-        font-size: 20px;
-    }
-    .catering-service{
-        min-width: 300px;
-        max-width: 350px;
-    }
-    .contact-details img{
-        height: 30px;
-        width: 30px;
-    }
-    .location p{
-        max-width: 330px;
-    }
-
-    .social-icons img{
-        height: 40px;
-        width: 40px;
-    }
-}
-@media only screen and (max-device-width: 653px) and (max-device-height: 280px)  and (-webkit-device-pixel-ratio: 4.2) {
-
-    .top-photo{
-        text-align: center;
-    }
-    .top-photo img{
-        max-width: 100%;
-        height: 30px;
-        margin-top: 50px;
-    }
-    .top-section img{
-        height: 80px;
-    }
-    .top-section, .mid-section{
-        margin: auto;
-        font-size: 20px;
-    }
-    .top-section{
-        min-width: 300px;
-        max-width: 380px;
-        height: 120vh;
-    }
-
-    button{
-        font-size: 15px;
-    }
-
-    .mid-section{
-        padding-left:30px;
-        padding-bottom: 20px;
-    }
-    .mid-section h1{
-        font-size: 30px;
-    }
-    .mid-section h2{
-        font-size: 20px;
-    }
-    .catering-service{
-        min-width: 300px;
-        max-width: 350px;
-    }
-    .contact-details img{
-        height: 30px;
-        width: 30px;
-    }
-    .location p{
-        max-width: 330px;
-    }
-
-    .social-icons img{
-        height: 40px;
-        width: 40px;
-    }
+  
+  /* Large devices (large laptops, desktops) */
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* Styles here */
   }
+  
+  /* Extra large devices (TVs, projectors) */
+  @media (min-width: 1200px) { 
+    /* Styles here */
+  }
+  
