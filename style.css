@@ -390,7 +390,7 @@ footer {
         margin: 0;
     }
     .photo-container img{
-        height: 230px;
+        height: 225px;
     }
     .contact-details img{
         height: 25px;
@@ -404,3 +404,153 @@ footer {
         height: 35px;
     }  
   }
+
+  /* iPhone 6/7/8 */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .top-photo img{
+        height: 180px;
+    }
+    .top-section, .mid-section{
+        font-size: 16px;
+        margin: auto;
+    }
+    .top-section{
+        height: 97vh;
+    }
+    .introduction{
+        background-size: contain;
+    }
+    .introduction img{
+        height: 100px;
+    }
+    .introduction p{
+        margin-bottom: 40px;
+        max-width: 300px;
+        min-width: 220px;
+    }
+    button{
+        font-size: 11px;
+        border-radius: 34px;
+        padding: 11px 22px;
+    }
+    .mid-section{
+        padding-left: 30px;
+        padding-bottom: 30px;
+
+    }
+    .mid-section h1{
+        font-size: 26px;
+    }
+
+    .mid-section h2{
+        font-size: 16px;
+    }
+    .catering-service{
+        max-width: 350px;
+        min-width: 300px;
+    }
+    .contact-details img{
+        height: 5px;
+        width: 5px;
+    }
+    .location p{
+        min-width: 150px;
+        max-width: 200px;
+    }
+    .photo-container{
+        padding: 0;
+        margin: 0;
+    }
+    .photo-container img{
+        height: 170px;
+    }
+    .contact-details img{
+        height: 22px;
+        width: 22px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }  
+}
+
+/* iPhone 6/7/8 Plus */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .top-photo img{
+        height: 180px;
+    }
+    .top-section, .mid-section{
+        font-size: 16px;
+        margin: auto;
+    }
+    .top-section{
+        height: 95vh;
+    }
+    .introduction{
+        background-size: contain;
+    }
+    .introduction img{
+        height: 100px;
+    }
+    .introduction p{
+        margin-bottom: 40px;
+        max-width: 300px;
+        min-width: 220px;
+    }
+    button{
+        font-size: 11px;
+        border-radius: 34px;
+        padding: 11px 22px;
+    }
+    .mid-section{
+        padding-left: 30px;
+        padding-bottom: 30px;
+
+    }
+    .mid-section h1{
+        font-size: 26px;
+    }
+
+    .mid-section h2{
+        font-size: 16px;
+    }
+    .catering-service{
+        max-width: 360px;
+        min-width: 320px;
+    }
+    .contact-details img{
+        height: 5px;
+        width: 5px;
+    }
+    .location p{
+        min-width: 150px;
+        max-width: 200px;
+    }
+    .photo-container{
+        padding: 0;
+        margin: 0;
+    }
+    .photo-container img{
+        height: 170px;
+    }
+    .contact-details img{
+        height: 22px;
+        width: 22px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }  
+}
