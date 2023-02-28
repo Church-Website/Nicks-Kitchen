@@ -13,8 +13,8 @@ if (!empty($_POST)) {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    #Email of website owner
-    $to_email = 'nickkitchen@auckland.co.nz';
+    #Email address of website owner
+    $to_email = 'info@nickskitchen.co.nz';
 
     #Missing info check
     if (empty($name)) {
@@ -51,32 +51,39 @@ if (!empty($_POST)) {
         #Set TCP port to connect to
         $mail->Port = 2525;
 
-        #User email details
+        #Sender details
         $mail->setFrom($email, $name);
         $mail->addReplyTo($email, $name);
         #Owner email
-        $mail->addAddress($to_email, 'Me');
+        $mail->addAddress($to_email, 'Nick');
         #Set email format to HTML
         $mail->isHTML(true);
-        #Email content
-        $mail->Subject = "New message from Nick's Kitchen";
-        $mail->Body = "Hi Nick,\n\nYou have received a new message from $name.\n\nEmail: $email\nMessage: $message";
-
-
-        echo $message;
+        #Email to owner
+        $mail->Subject = "Nick's Kitchen enquiry from, $name";
+        $mail->Body = "<html><body><p>Hi Nick,</p><p>You have received a new message from $name.</p><p>Email: $email</p><p>Message: $message</p></body></html>";
+        $mail->AltBody = "Hi Nick,\n\nYou have received a new message from $name.\n\nEmail: $email\nMessage: $message";
 
         if ($mail->send()) {
-            echo "Message has been sent successfully";
+            #Clear PHPMailer object
+            $mail->clearAllRecipients();
+            #Sender email
+            $mail->addAddress($email, $name);
+            #Email to sender
+            $mail->Subject = "Thank you for contacting Nick's Kitchen!";
+            $mail->Body = "<html><body><p>Hi $name,</p><p>Thank you for contacting us. We have received your enquiry and will get back to you as soon as possible.</p><p>Best regards,</p><p>Nick's Kitchen Team</p></body></html>";
+            $mail->AltBody = "Hi $name,\n\nThank you for contacting us. We have received your enquiry and will get back to you as soon as possible.\n\nBest regards,\nNick's Kitchen Team";
+
+            if ($mail->send()) {
+                echo "Message has been sent successfully.";
+            } else {
+                echo "Confirmation email could not be sent.";
+            }
         } else {
             echo "Mailer Error: " . $mail->ErrorInfo;
         }
 
         #Return to section of website once form is submitted
-        header('location:index.php#contact');
-
-        #$mail->From = $email;
-        #$mail->FromName = $name;
-        #$mail->setFrom($email, 'Mailtrap Website'); //Rename to actual SMTP host
+        header('location:index.html');
     } else {
         #Display error to user
         $all_errors = join('<br/>', $errors);
